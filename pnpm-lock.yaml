@@ -17,6 +17,9 @@ importers:
       '@types/node':
         specifier: ^22.5.1
         version: 22.5.1
+      ansi-escapes:
+        specifier: ^7.0.0
+        version: 7.0.0
       effect:
         specifier: ^3.7.0
         version: 3.7.0
@@ -158,6 +161,10 @@ packages:
   '@types/node@22.5.1':
     resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
+  ansi-escapes@7.0.0:
+    resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
+    engines: {node: '>=18'}
+
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
@@ -169,6 +176,10 @@ packages:
 
   effect@3.7.0:
     resolution: {integrity: sha512-TXrb4SHTHrij396NfvGgpOD/5Sh503LtN2AeskkB7YO6Oe1tWSekk8dcrj3AWbMDOJ/fXOvcf6HD+Svus2zIeA==}
+
+  environment@1.1.0:
+    resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
+    engines: {node: '>=18'}
 
   fast-check@3.22.0:
     resolution: {integrity: sha512-8HKz3qXqnHYp/VCNn2qfjHdAdcI8zcSqOyX64GOMukp7SL2bfzfeDKjSd+UyECtejccaZv3LcvZTm9YDD22iCQ==}
@@ -379,6 +390,10 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  ansi-escapes@7.0.0:
+    dependencies:
+      environment: 1.1.0
+
   braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
@@ -386,6 +401,8 @@ snapshots:
   detect-libc@1.0.3: {}
 
   effect@3.7.0: {}
+
+  environment@1.1.0: {}
 
   fast-check@3.22.0:
     dependencies:
